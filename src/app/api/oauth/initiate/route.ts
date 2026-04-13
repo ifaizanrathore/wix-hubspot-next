@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Must match EXACTLY the scopes configured in HubSpot app → Auth → Scopes
 const SCOPES = [
   'crm.objects.contacts.read',
   'crm.objects.contacts.write',
-  'crm.schemas.contacts.read',
 ].join(' ');
 
 export async function GET(req: NextRequest): Promise<NextResponse> {
