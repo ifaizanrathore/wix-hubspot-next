@@ -17,7 +17,6 @@ interface MongooseCache {
 
 // Attach to global to survive Next.js hot-reloads
 declare global {
-  // eslint-disable-next-line no-var
   var mongooseCache: MongooseCache | undefined;
 }
 
